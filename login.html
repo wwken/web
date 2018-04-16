@@ -17,11 +17,9 @@
    <link rel="stylesheet" href="vendor/tether/tether.min.css" />
    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="vendor/bootstrap/css/glyphicon.css" />
    <link rel="stylesheet" href="vendor/ion-icons/css/ionicons.min.css" />
    <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css" />
    <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css" />
-   <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" />
    <link rel="stylesheet" href="vendor/lite-tooltip/css/litetooltip.css" />
 
    <!-- Theme CSS -->
@@ -32,21 +30,24 @@
    <link href="css/animation.css" rel="stylesheet" />
    <link href="css/responsive.css" rel="stylesheet" />
    <link href="css/utilities.css" rel="stylesheet" />
-   <link href="css/font-icons.css" rel="stylesheet" />
    <link href="css/skins/default.css" rel="stylesheet" />
+
+   <!-- Current Page CSS -->
+   <link href="smartforms/Templates/css/smart-forms.css" rel="stylesheet" />
 
    <!-- Theme Custom CSS -->
    <link rel="stylesheet" href="css/custom.css">
 
-   <!-- Style Swicher -->
+   <!-- Style Swicher --> 
    <link href="vendor/style-switcher/style-switcher.css" rel="stylesheet" />
    <link href="vendor/style-switcher/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
 </head>
 <body>
 
    <div class="wrapper">
+
       <!--Header-->
-      <header id="header" class="header-narrow header-full-width" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0', 'stickyChangeLogo': false}">
+      <header id="header" class="header-no-min-height" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0', 'stickyChangeLogo': false}">
          <div class="header-body">
             <div class="header-container container">
                <div class="header-row">
@@ -54,14 +55,14 @@
                      <div class="header-row">
                         <div class="header-logo">
                            <a href="index.html">
-                              <img alt="Express" width="108" height="72" src="img/logo.png">
+                              <img alt="Express" width="120" height="80" src="img/logo.png">
                            </a>
                         </div>
                      </div>
                   </div>
-                  <div class="header-column justify-content-center">
+                  <div class="header-column justify-content-end">
                      <div class="header-row">
-                        <div class="header-nav header-nav-top-line justify-content-center">
+                        <div class="header-nav header-nav-top-line">
                            <div class="header-nav-main header-nav-main-effect-2 header-nav-main-sub-effect-1">
                               <nav class="collapse">
                                  <ul class="nav nav-pills" id="mainNav">
@@ -88,8 +89,53 @@
                                        </ul>
                                     </li>
                                     <li class="dropdown">
-                                       <a class="dropdown-item dropdown-toggle" href="#">Pages </a>
+                                       <a class="dropdown-item dropdown-toggle" href="index.html">Shop </a>
                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="shop-index.html">Shop Home</a></li>
+                                          <li><a class="dropdown-item" href="shop-single-product.html">Singe Product</a></li> 
+                                          <li><a class="dropdown-item" href="shop-categories.html">Shop Category</a></li>
+                                          <li><a class="dropdown-item" href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                                          <li><a class="dropdown-item" href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                          <li><a class="dropdown-item" href="shop-cart.html">Shop Cart</a></li>
+                                          <li><a class="dropdown-item" href="shop-checkout.html">Shop Checkout</a></li>
+                                          <li class="dropdown-submenu">
+                                             <a class="dropdown-item" href="shop-shortcode-products.html">Shop Shortcodes</a>
+                                             <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="shop-shortcode-products.html">Product Item</a></li>
+                                                <li><a class="dropdown-item" href="shop-shortcode-products-carousel.html">Product Item - Carousel</a></li>
+                                                <li><a class="dropdown-item" href="shop-shortcode-mini-products.html">Product Item - Mini List</a></li>
+                                             </ul>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                       <a class="dropdown-item dropdown-toggle active" href="#">Pages </a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-submenu">
+                                             <a class="dropdown-item" href="#">About Us</a>
+                                             <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="pages-about.html">About Us</a></li>
+                                                <li><a class="dropdown-item" href="pages-about-2.html">About Us - Alt</a></li>
+                                                <li><a class="dropdown-item" href="pages-about-4.html">About Us - Alt 2</a></li>
+                                                <li><a class="dropdown-item" href="pages-about-3.html">About Us - Extended</a></li>
+                                                <li><a class="dropdown-item" href="pages-meet-team.html">Meet Team</a></li> 
+                                             </ul>
+                                          </li>
+                                          <li class="dropdown-submenu">
+                                             <a class="dropdown-item" href="#">About Me</a>
+                                             <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="pages-about-me.html">About Me</a></li>
+                                                <li><a class="dropdown-item" href="pages-about-me-2.html">About Me - Alt</a></li>
+                                             </ul>
+                                          </li>
+                                          <li class="dropdown-submenu">
+                                             <a class="dropdown-item" href="#">Contact Us</a>
+                                             <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="pages-contact-3.html">Contact Version 1</a></li>
+                                                <li><a class="dropdown-item" href="pages-contact.html">Contact Version 2</a></li>
+                                                <li><a class="dropdown-item" href="pages-contact-2.html">Contact Version 3</a></li>
+                                             </ul>
+                                          </li>
                                           <li class="dropdown-submenu">
                                              <a class="dropdown-item" href="#">Layouts</a>
                                              <ul class="dropdown-menu">
@@ -120,7 +166,7 @@
                                              </ul>
                                           </li>
                                           <li><a class="dropdown-item" href="pages-search-result.html">Search Result</a></li>
-                                          <li><a class="dropdown-item" href="pages-pricing.html">Pricing Page</a></li>
+                                          <li><a class="dropdown-item" href="pages-pricing.html">Pricing Page</a></li> 
                                           <li class="dropdown-submenu">
                                              <a class="dropdown-item" href="#">FAQs</a>
                                              <ul class="dropdown-menu">
@@ -334,7 +380,7 @@
                                           <li>
                                              <div class="dropdown-mega-content">
                                                 <div class="row">
-                                                   <div class="col">
+                                                   <div class="col-lg-3">
                                                       <span class="dropdown-mega-sub-title">Shortcodes One</span>
                                                       <ul class="dropdown-mega-sub-nav">
                                                          <li><a class="dropdown-item" href="shortcodes-accordions.html"><i class="fa fa-bell"></i>Accordions</a></li>
@@ -346,9 +392,10 @@
                                                          <li><a class="dropdown-item" href="shortcodes-buttons.html"><i class="fa fa-tint"></i>Buttons</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-call-to-actions.html"><i class="fa fa-bullhorn"></i>Call To Actions</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-circle-charts.html"><i class="ion-pie-graph"></i>Circle Charts</a></li>
+                                                         <li><a class="dropdown-item" href="shortcodes-clients.html"><i class="fa fa-globe"></i>Clients & Brands</a></li>
                                                       </ul>
                                                    </div>
-                                                   <div class="col">
+                                                   <div class="col-lg-3">
                                                       <span class="dropdown-mega-sub-title">Shortcodes Two</span>
                                                       <ul class="dropdown-mega-sub-nav">
                                                          <li><a class="dropdown-item" href="shortcodes-counters.html"><i class="fa fa-star-o"></i>Counters</a></li>
@@ -360,9 +407,10 @@
                                                          <li><a class="dropdown-item" href="shortcodes-icon-boxes.html"><i class="fa fa-list-alt"></i>Icon Box</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-icon-lists.html"><i class="fa fa-list"></i>Icon List</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-image-hovers.html"><i class="fa fa-picture-o"></i>Image Hovers</a></li>
+                                                         <li><a class="dropdown-item" href="shortcodes-lightbox.html"><i class="fa fa-list-alt"></i>Lightbox</a></li>
                                                       </ul>
                                                    </div>
-                                                   <div class="col">
+                                                   <div class="col-lg-3">
                                                       <span class="dropdown-mega-sub-title">Shortcodes Three</span>
                                                       <ul class="dropdown-mega-sub-nav">
                                                          <li><a class="dropdown-item" href="shortcodes-modals.html"><i class="ion-share"></i>Modals</a></li>
@@ -374,9 +422,10 @@
                                                          <li><a class="dropdown-item" href="shortcodes-pricing-tables-2.html"><i class="fa fa-money"></i>Pricing Tables Alt</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-process-steps.html"><i class="ion-arrow-graph-up-right"></i>Process Steps</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-progress-bars.html"><i class="fa fa-tasks"></i>Progress Bars</a></li>
+                                                         <li><a class="dropdown-item" href="shortcodes-promo-bars.html"><i class="fa fa-leaf"></i>Promo Bars</a></li>
                                                       </ul>
                                                    </div>
-                                                   <div class="col">
+                                                   <div class="col-lg-3">
                                                       <span class="dropdown-mega-sub-title">Shortcodes Four</span>
                                                       <ul class="dropdown-mega-sub-nav">
                                                          <li><a class="dropdown-item" href="shortcodes-section-arrows.html"><i class="fa fa-map"></i>Section Arrows</a></li>
@@ -387,14 +436,6 @@
                                                          <li><a class="dropdown-item" href="shortcodes-thumbnails.html"><i class="fa fa-list-alt"></i>Thumbnails</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-time-lines.html"><i class="fa fa-calendar-times-o"></i>Time Lines</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-tooltips.html"><i class="fa fa-thumb-tack"></i>Tooltips <span class="label label-default pull-right">Advanced</span></a></li>
-                                                      </ul>
-                                                   </div>
-                                                   <div class="col">
-                                                      <span class="dropdown-mega-sub-title">Shortcodes Five</span>
-                                                      <ul class="dropdown-mega-sub-nav">
-                                                         <li><a class="dropdown-item" href="shortcodes-clients.html"><i class="fa fa-globe"></i>Clients & Brands</a></li>
-                                                         <li><a class="dropdown-item" href="shortcodes-lightbox.html"><i class="fa fa-list-alt"></i>Lightbox</a></li>
-                                                         <li><a class="dropdown-item" href="shortcodes-promo-bars.html"><i class="fa fa-leaf"></i>Promo Bars</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-typograpy.html"><i class="fa fa-text-height"></i>Typograpy</a></li>
                                                          <li><a class="dropdown-item" href="shortcodes-content-carousels.html"><i class="fa fa-flash"></i>Content Carousels <span class="label label-primary pull-right">New</span></a></li>
                                                       </ul>
@@ -404,50 +445,6 @@
                                           </li>
                                        </ul>
                                     </li>
-                                    <li class="dropdown">
-                                       <a class="dropdown-item dropdown-toggle" href="index.html">Shop </a>
-                                       <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="shop-index.html">Shop Home</a></li>
-                                          <li><a class="dropdown-item" href="shop-single-product.html">Singe Product</a></li>
-                                          <li><a class="dropdown-item" href="shop-categories.html">Shop Category</a></li>
-                                          <li><a class="dropdown-item" href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                          <li><a class="dropdown-item" href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                          <li><a class="dropdown-item" href="shop-cart.html">Shop Cart</a></li>
-                                          <li><a class="dropdown-item" href="shop-checkout.html">Shop Checkout</a></li>
-                                          <li class="dropdown-submenu">
-                                             <a class="dropdown-item" href="shop-shortcode-products.html">Shop Shortcodes</a>
-                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="shop-shortcode-products.html">Product Item</a></li>
-                                                <li><a class="dropdown-item" href="shop-shortcode-products-carousel.html">Product Item - Carousel</a></li>
-                                                <li><a class="dropdown-item" href="shop-shortcode-mini-products.html">Product Item - Mini List</a></li>
-                                             </ul>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                       <a class="dropdown-item dropdown-toggle active" href="index.html">Contact </a>
-                                       <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="pages-contact-3.html">Contact Version 1</a></li>
-                                          <li><a class="dropdown-item" href="pages-contact.html">Contact Version 2</a></li>
-                                          <li><a class="dropdown-item" href="pages-contact-2.html">Contact Version 3</a></li>
-                                       </ul>
-                                    </li>
-                                 </ul>
-                              </nav>
-                           </div>
-                           <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
-                              <i class="fa fa-bars"></i>
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="header-column justify-content-end">
-                     <div class="header-row">
-                        <div class="header-nav header-nav-top-line justify-content-end">
-                           <div class="header-nav-main header-nav-main-effect-2 header-nav-main-sub-effect-1">
-                              <nav class="collapse">
-                                 <ul class="nav nav-pills" id="mainNav">
                                     <li class="dropdown header-search-wrap">
                                        <a class="dropdown-item dropdown-toggle" href="#"><i class="fa fa-search fs-14"></i> </a>
                                        <ul class="dropdown-menu">
@@ -465,71 +462,17 @@
                                           </li>
                                        </ul>
                                     </li>
-                                    <li class="dropdown dropdown-mega dropdown-mega-shop" id="headerShop">
-                                       <a class="dropdown-item dropdown-toggle" href="page-login.html">
-                                          <i class="ion-bag fs-22"></i>
-                                          <span class="cart-items">2</span>
-                                       </a>
-                                       <ul class="dropdown-menu">
-                                          <li>
-                                             <div class="dropdown-mega-content">
-                                                <table class="cart">
-                                                   <tbody>
-                                                      <tr>
-                                                         <td class="product-actions">
-                                                            <a title="Remove this item" class="remove" href="#">
-                                                               <i class="fa fa-times"></i>
-                                                            </a>
-                                                         </td>
-                                                         <td class="product-thumbnail">
-                                                            <a href="shop-product-sidebar.html">
-                                                               <img width="100" height="100" alt="" class="img-fluid" src="img/shop/th-mismo-bag-grey.jpg">
-                                                            </a>
-                                                         </td>
-                                                         <td class="product-name">
-                                                            <a href="shop-product-sidebar.html">Mismo Bag Grey<br><span class="amount">1 x <strong>$120.00</strong></span></a>
-                                                         </td>
-                                                      </tr>
-                                                      <tr>
-                                                         <td class="product-actions">
-                                                            <a title="Remove this item" class="remove" href="#">
-                                                               <i class="fa fa-times"></i>
-                                                            </a>
-                                                         </td>
-                                                         <td class="product-thumbnail">
-                                                            <a href="shop-product-sidebar.html">
-                                                               <img width="100" height="100" alt="" class="img-fluid" src="img/shop/th-womens-bag.jpg">
-                                                            </a>
-                                                         </td>
-                                                         <td class="product-name">
-                                                            <a href="shop-product-sidebar.html">Womens Bag<br><span class="amount">2 x <strong>$135.00</strong></span></a>
-                                                         </td>
-                                                      </tr>
-                                                      <tr>
-                                                         <td class="cart-total-actions" colspan="6">
-                                                            <div class="cart-total">
-                                                               <strong>Subtotal:</strong>
-                                                               <span class="cart-total-amount">$255.00</span>
-                                                            </div>
-                                                         </td>
-                                                      </tr>
-                                                      <tr>
-                                                         <td class="actions p-none" colspan="6">
-                                                            <div class="actions-continue text-center">
-                                                               <button type="submit" class="btn btn-light">View Card</button>
-                                                               <button type="submit" class="btn btn-primary mr-none">Checkout</button>
-                                                            </div>
-                                                         </td>
-                                                      </tr>
-                                                   </tbody>
-                                                </table>
-                                             </div>
-                                          </li>
-                                       </ul>
-                                    </li>
                                  </ul>
                               </nav>
                            </div>
+                           <ul class="header-social-icons social-icons d-none d-sm-block">
+                              <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                              <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                              <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                           </ul>
+                           <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                              <i class="fa fa-bars"></i>
+                           </button>
                         </div>
                      </div>
                   </div>
@@ -539,289 +482,235 @@
       </header>
       <!--End Header-->
 
-      <div class="page has-sidebar has-right-sidebar bordered">
+      <div class="page body-sign">
 
-         <section class="section-primary p-none">
-            <div class="xgoogle-map" data-map-type="roadmap" data-map-zoom="14" data-map-style="base" data-map-address="14 Wall Street New York, NY 10005" style="height: 400px;"></div>
-         </section>
+         <div class="page-inner p-none no-border">
 
-         <div class="page-inner pt-none">
+            <section class="section-big" style="background:url(img/new/corinne-kutz.jpg);background-size:cover">
 
-            <div class="container">
+               <div class="container">
+                  <div class="row">
 
-               <div class="row">
+                     <div class="col-md-8 offset-2">
 
-                  <div class="col-md-9 left-side-sidebar">
+                        <div class="smart-wrap">
+                           <div class="smart-forms smart-container wrap-2">
 
-                     <div class="v-heading-v2">
-                        <h3>Welcome To Express</h3>
+                              <div class="form-header header-primary">
+                                 <h4><i class="fa fa-sign-in"></i>Login</h4>
+                              </div><!-- end .form-header section -->
+
+                              <form method="post" action="/" id="contact">
+                                 <div class="form-body">
+
+                                    <div class="frm-row">
+
+                                       <div class="colm colm6 pad-r30 bdr">
+
+                                          <div class="spacer-b30">
+                                             <div class="tagline"><span>Sign in  With </span></div><!-- .tagline -->
+                                          </div>
+
+                                          <div class="section">
+
+                                             <a href="#" class="button btn-social facebook span-left block">
+                                                <span><i class="fa fa-facebook"></i></span> Facebook
+                                             </a>
+
+                                             <a href="#" class="button btn-social twitter span-left block">
+                                                <span><i class="fa fa-twitter"></i></span> Twitter
+                                             </a>
+
+                                             <a href="#" class="button btn-social googleplus span-left block">
+                                                <span><i class="fa fa-google-plus"></i></span> Google+
+                                             </a>
+
+                                          </div><!-- end section -->
+
+                                       </div><!-- end .colm section -->
+
+                                       <div class="colm colm6 pad-l30">
+
+                                          <div class="spacer-b30">
+                                             <div class="tagline"><span> OR  Login </span></div><!-- .tagline -->
+                                          </div>
+
+                                          <div class="section">
+                                             <label class="field prepend-icon">
+                                                <input type="text" name="username" id="username" class="gui-input" placeholder="Enter username">
+                                                <span class="field-icon"><i class="fa fa-user"></i></span>
+                                             </label>
+                                          </div><!-- end section -->
+
+                                          <div class="section">
+                                             <label class="field prepend-icon">
+                                                <input type="text" name="password" id="password" class="gui-input" placeholder="Enter password">
+                                                <span class="field-icon"><i class="fa fa-lock"></i></span>
+                                             </label>
+                                          </div><!-- end section -->
+
+                                          <div class="section">
+                                             <label class="switch block">
+                                                <input type="checkbox" name="remember" id="remember" checked>
+                                                <span class="switch-label" data-on="YES" data-off="NO"></span>
+                                                <span> Remember me</span>
+                                             </label>
+                                          </div><!-- end section -->
+
+                                       </div><!-- end .colm section -->
+
+                                    </div><!-- end .frm-row section -->
+
+                                 </div><!-- end .form-body section -->
+                                 <div class="form-footer">
+                                    <button type="submit" class="button btn-primary">Sign in</button>
+                                 </div><!-- end .form-footer section -->
+                              </form>
+
+                           </div><!-- end .smart-forms section -->
+                        </div>
                      </div>
-
-                     <p class="mb-60">
-                        Curabitur luctus lacus et lectus dictum ornare. Phasellus id interdum est.
-                        Nullam id nulla massa. Nullam quis euismod lorem. Nulla consectetur rutrum lacinia.
-                        Donec fermentum sapien vitae neque venenatis vestibulum.
-                     </p>
-
-                     <form action="#" method="post">
-                        <div class="form-group">
-                           <div class="row">
-
-                              <div class="col-sm-4">
-                                 <label>Your name <span class="required">*</span></label>
-                                 <input type="text" value="" maxlength="100" class="form-control" name="name" id="name">
-                              </div>
-                              <div class="col-sm-4">
-                                 <label>Your email address <span class="required">*</span></label>
-                                 <input type="email" value="" maxlength="100" class="form-control" name="email" id="email1">
-                              </div>
-                              <div class="col-sm-4">
-                                 <label>Website</label>
-                                 <input type="text" value="" maxlength="100" class="form-control" name="website" id="website">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <div class="row">
-
-                              <div class="col-sm-12">
-                                 <label>Comment <span class="required">*</span></label>
-                                 <textarea maxlength="5000" rows="10" class="form-control" name="comment" id="Textarea1"></textarea>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <br>
-                              <button name="submit" type="submit" id="sendmesage" class="btn btn-primary btn-md">Send Message</button>
-                           </div>
-                        </div>
-                     </form>
-
-                     <hr class="invisible" />
-                  </div>
-
-                  <div class="col-md-3 right-side-sidebar">
-
-                     <aside class="sidebar">
-
-                        <div class="v-heading-v2">
-                           <h3 class="fs-18">Phone & Email</h3>
-                        </div>
-                        <p>
-                           Email: <a href="#" target="_blank">youremail@yourdomain.com</a><br />
-                           Phone: +44 (0) 208 0000 000<br />
-                           Fax: +44 (0) 208 0000 001
-                        </p>
-
-                        <hr class="invisible" />
-
-                        <div class="v-heading-v2">
-                           <h3 class="fs-18">Business Hours</h3>
-                        </div>
-                        <p>
-                           +44 (0) 208 0000 000<br />
-                           +44 (0) 208 0000 001
-                        </p>
-
-                        <hr class="invisible" />
-
-                        <div class="v-heading-v2">
-                           <h3 class="fs-18">Find us on</h3>
-                        </div>
-
-                        <div class="text-center content-center clearfix d-inline-block">
-
-                           <a href="#" class="social-icon si-light si-facebook" title="Facebook">
-                              <i class="si-icon-facebook"></i>
-                              <i class="si-icon-facebook"></i>
-                           </a>
-
-                           <a href="#" class="social-icon si-light si-paypal" title="Paypal">
-                              <i class="si-icon-paypal"></i>
-                              <i class="si-icon-paypal"></i>
-                           </a>
-
-                           <a href="#" class="social-icon si-light si-flattr" title="Flattr">
-                              <i class="si-icon-flattr"></i>
-                              <i class="si-icon-flattr"></i>
-                           </a>
-
-                           <a href="#" class="social-icon si-light si-android" title="Android">
-                              <i class="si-icon-android"></i>
-                              <i class="si-icon-android"></i>
-                           </a>
-                        </div>
-                     </aside>
                   </div>
                </div>
-            </div>
+            </section>
          </div>
 
-         <footer class="footer footer-pompis">
+         <footer class="footer stylelamas bg-block-top-shadow">
             <div class="main">
                <div class="container">
                   <div class="row">
-                     <div class="col-md-3">
-                        <img alt="Express" src="img/logo-white.png" style="height: 90px;margin-top:-20px;" class="mb-10">
-
-                        <p>
-                           Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                           per inceptos himenaeos. Nulla nunc dui, tristique in semper vel,
-                           congue sed ligula auctor torquent per conubia nostra.
-                        </p>
-                        <p>
-                           <a href="blog-standard-post.html">Read More →</a>
-                        </p>
-                     </div>
-
-                     <div class="col-md-3">
-                        <div class="heading">
-                           <h4 class="title">Contact Us</h4>
-                        </div>
-                        <div class="footer-contact-info">
-                           <ul class="pl-0">
-                              <li>
-                                 <p><i class="fa fa-building"></i>Your Company </p>
-                              </li>
-                              <li>
-                                 <p><i class="fa fa-map-marker"></i>1 Liberty St New York, NY 5006 </p>
-                              </li>
-                              <li>
-                                 <p><i class="fa fa-envelope"></i><strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></p>
-                              </li>
-                              <li>
-                                 <p><i class="fa fa-phone"></i><strong>Phone:</strong> (123) 456-7890</p>
-                              </li>
-                           </ul>
-                           <br>
-
+                     <div class="col-md-4">
+                        <section>
+                           <div class="heading">
+                              <h4 class="title">Newsletter</h4>
+                           </div>
+                           <p class="mb-10">
+                              Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.
+                           </p>
 
                            <div class="clearfix">
-                              <a href="#" class="social-icon si-dark si-facebook" title="Facebook">
-                                 <i class="si-icon-facebook"></i>
-                                 <i class="si-icon-facebook"></i>
-                              </a>
-                              <a href="#" class="social-icon si-dark si-twitter" title="Twitter">
-                                 <i class="si-icon-twitter"></i>
-                                 <i class="si-icon-twitter"></i>
-                              </a>
-                              <a href="#" class="social-icon si-dark si-skype" title="Skype">
-                                 <i class="si-icon-skype"></i>
-                                 <i class="si-icon-skype"></i>
-                              </a>
-                              <a href="#" class="social-icon si-dark si-gplus" title="Google Plus">
-                                 <i class="si-icon-gplus"></i>
-                                 <i class="si-icon-gplus"></i>
-                              </a>
+                              <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST" novalidate="novalidate">
+                                 <div class="input-group">
+                                    <input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
+                                    <span class="input-group-btn">
+                                       <button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
+                                    </span>
+                                 </div>
+                              </form>
                            </div>
-                        </div>
 
+                           <div class="clearfix social-wrap mt-25">
+                              <ul class="list-inline">
+                                 <li>
+                                    <a href="http://twitter.com/" class="asc_twitter clearfix">
+                                       <span class="social-icon"><i class="ion-social-twitter"></i></span>
+                                       <div class="meta clearfix">
+                                          <strong class="asc_count">Follow</strong>
+                                          <div class="name">on Twitter</div>
+                                       </div>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="http://facebook.com/" class="asc_facebook clearfix">
+                                       <span class="social-icon"><i class="ion-social-facebook"></i></span>
+                                       <div class="meta clearfix">
+                                          <strong class="asc_count">Follow</strong>
+                                          <div class="name">on Facebook</div>
+                                       </div>
+                                    </a>
+                                 </li>
+                                 <!--<li>
+                                    <a href="http://facebook.com/" class="asc_rss clearfix">
+                                       <span class="social-icon"><i class="ion-social-rss"></i></span>
+                                       <div class="meta clearfix">
+                                          <strong class="asc_count">Subscribe</strong>
+                                          <div class="name">to RSS Feed</div>
+                                       </div>
+                                    </a>
+                                 </li>-->
+                              </ul>
+                           </div>
+                        </section>
+                     </div>
+
+                     <div class="col-md-1"> </div>
+                     <div class="col-md-2 col-sm-6">
+                        <section>
+                           <div class="heading">
+                              <h4 class="title">Company</h4>
+                           </div>
+                           <ul class="list-unstyled">
+                              <li> <a href="index.html">FAQ & Terms</a> </li>
+                              <li> <a href="custom-fonts/index.html">About Company</a> </li>
+                              <li> <a href="index.html">Terms of Service</a> </li>
+                              <li> <a href="index.html">Track Order</a> </li>
+                              <li> <a href="custom-fonts/index.html">Delivery</a> </li>
+                              <li> <a href="index.html">Privacy Policy</a> </li>
+                              <li> <a href="index.html">Jobs</a> <span class="label label-default o-8">2</span></li>
+                           </ul>
+                        </section>
+                     </div>
+                     <div class="col-md-2 col-sm-6">
+                        <section>
+                           <div class="heading">
+                              <h4 class="title">Usefull Links</h4>
+                           </div>
+                           <ul class="list-unstyled">
+                              <li> <a href="contact/index.html">Knowledge Base</a> </li>
+                              <li> <a href="custom-fonts/index.html">Tracking & Reports</a> </li>
+                              <li> <a href="index.html">Contact Express</a> </li>
+                              <li> <a href="responsive-image/index.html">Conditions</a> </li>
+                              <li> <a href="contact/index.html">Privacy Policy</a> </li>
+                              <li> <a href="index.html">Documentation</a> </li>
+                              <li> <a href="custom-fonts/index.html">All Features</a> </li>
+                           </ul>
+                        </section>
                      </div>
 
                      <div class="col-md-3">
-                        <div class="heading">
-                           <h4 class="title">Recent Post</h4>
-                        </div>
-                        <div class="clearfix">
-
-                           <div class="spost clearfix">
-                              <div class="entry-c">
-                                 <div class="entry-title">
-                                    <h4><a href="#">Amazing Standard Post</a></h4>
-                                 </div>
-                                 <ul class="entry-meta">
-                                    <li>June 28, 2018</li>
-                                 </ul>
-                              </div>
+                        <section>
+                           <div class="heading">
+                              <h4 class="title">Contact Us</h4>
                            </div>
 
-                           <div class="spost clearfix">
-                              <div class="entry-c">
-                                 <div class="entry-title">
-                                    <h4><a href="#">Full Width Media Post</a></h4>
-                                 </div>
-                                 <ul class="entry-meta">
-                                    <li>September 20, 2018</li>
-                                 </ul>
-                              </div>
+                           <div class="map-img">
+                              <address>
+                                 <i class="ion-ios-location"></i> <strong> Address</strong><br>
+                                 795 Folsom Ave, Suite 600 San Francisco, CA 94107<br>
+                              </address>
+                              <abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
+                              <abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
+                              <abbr title="Email Address"><strong>Email:</strong></abbr> info@express.com
                            </div>
-
-                           <div class="spost clearfix">
-                              <div class="entry-c">
-                                 <div class="entry-title">
-                                    <h4><a href="#">Amazing Slideshow post</a></h4>
-                                 </div>
-                                 <ul class="entry-meta">
-                                    <li>March 20, 2018</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="col-md-3">
-                        <div class="heading">
-                           <h4 class="title">Recent Works</h4>
-                        </div>
-                        <ul class="portfolio-grid">
-                           <li>
-                              <a href="#" class="grid-image">
-                                 <img src="img/thumbs/project-6.jpg" alt="Desert Mini Planet">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="grid-image">
-                                 <img src="img/thumbs/project-5.jpg" alt="SAAP">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="grid-image">
-                                 <img src="img/thumbs/project-4.png" alt="Robot Chicken">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="grid-image">
-                                 <img src="img/thumbs/project-3.jpg" alt="Tree">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="grid-image">
-                                 <img src="img/thumbs/project-2.jpg" alt="Space Invaders">
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#" class="grid-image">
-                                 <img src="img/thumbs/project-7.jpg" alt="Polar Ice">
-                              </a>
-                           </li>
-                        </ul>
-
+                        </section>
                      </div>
                   </div>
-
                </div>
             </div>
+
             <div class="copyright">
                <div class="container">
                   <div class="row">
                      <div class="col-sm-6">
-
-                        <p class="mb-0 fs-13">© Copyright 2018 by Express. All Rights Reserved.</p>
-
+                        <ul class="list-inline fs-13 mb-none">
+                           <li><p class="mb-0 fw-6">© 2015-2018 Express</p></li>
+                           <li><a href="pages-about.html">About</a></li>
+                           <li><a href="blog-grid.html">Blog</a></li>
+                           <li><a href="pages-contact.html">Contact</a></li>
+                           <li><a href="#">Terms</a></li>
+                           <li><a href="#">Jobs</a></li>
+                           <li><a href="#">Sitemap</a></li>
+                           <li><a href="#">Public Policy</a></li>
+                        </ul>
                      </div>
                      <div class="col-sm-6">
-                        <div class="clearfix pull-right">
-
-                           <ul class="list-inline fs-13 mb-none">
-                              <li><a href="pages-about.html">About</a></li>
-                              <li><a href="blog-grid.html">Blog</a></li>
-                              <li><a href="pages-contact.html">Contact</a></li>
-                              <li><a href="#">Terms</a></li>
-                              <li><a href="#">Jobs</a></li>
-                              <li><a href="#">Sitemap</a></li>
-                           </ul>
-                        </div>
+                        <ul class="footer-socials list-inline pull-right mb-none">
+                           <li><a href="#" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="#" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="#" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                           <li><a href="#" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a href="#" class="tooltips" data-placement="top" data-rel="tooltip" data-original-title="Linkedin"><i class="fa fa-tumblr"></i></a></li>
+                        </ul>
                      </div>
                   </div>
                </div>
@@ -829,7 +718,6 @@
          </footer>
       </div>
    </div>
-
    <!-- Vendor -->
    <script src="vendor/jquery/jquery.js"></script>
    <script src="vendor/jquery/jquery.nav.js"></script>
@@ -849,12 +737,8 @@
    <script src="vendor/owl-carousel/owl.carousel.js"></script>
    <script src="vendor/wow/wow.min.js"></script>
    <script src="vendor/lite-tooltip/js/litetooltip.js"></script>
+   <script src="vendor/smoothscroll/smooth.scroll.min.js"></script>
    <script src="js/theme-plugins.js"></script>
-
-   <!-- Google Maps -->
-   <script src="vendor/jquery.gmap/map-styles.js"></script>
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIy24644w-ZBEOCfMfzYPYeULbuKJg_rs"></script>
-   <script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>
 
    <!-- Theme Initialization -->
    <script src="js/theme.js"></script>
@@ -862,7 +746,7 @@
    <!-- Custom JS -->
    <script src="js/custom.js"></script>
 
-   <!-- Style Swicher -->
+   <!-- Style Swicher --> 
    <script src="vendor/style-switcher/style.switcher.js" id="styleSwitcherScript" data-base-path="" data-skin-src=""></script>
    <script src="vendor/style-switcher/style.switcher.localstorage.js"></script>
 </body>
